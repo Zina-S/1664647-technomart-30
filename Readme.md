@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Зина Слепцова](https://up.htmlacademy.ru/htmlcss/30/user/1664647).
-* Наставник: [Максим Волков] (https://htmlacademy.ru/profile/id1158117).
+* Наставник: [Максим Волков](https://htmlacademy.ru/profile/id1158117).
 
 ---
 
