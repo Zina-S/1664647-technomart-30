@@ -39,6 +39,10 @@ body {
     height: auto;
   }
 
+  .logo {
+    background-color: var(--basic-extra-dark);   
+  }
+
   .order {
     font-size: 18px;
     line-height: 24px;
@@ -47,6 +51,7 @@ body {
     background-color: var(--basic-extra-dark);
   }
   .order,
+  .order-button,
   .footer-link,
   .footer-social-list {
     list-style: none;
@@ -60,6 +65,10 @@ body {
     background-color: var(--special-green);
   }
 
+  .order-button a:hover {
+    background-color: var(--basic-extra-black);
+  }
+
   .info-app {
     font-size: 16px;
     line-height: 23px;
@@ -67,6 +76,35 @@ body {
     font-style: italic;
     color: var(--basic-red);
   }
+
+  .phone {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--basic-red);
+    background-color: transparent;
+    border: 3px solid var(--basic-white)   
+  }
+
+  .login-link,
+  .login-registration {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--basic-extra-black);
+    background-color: var(--basic-white);
+  }
+
+  .login-link:hover,
+  .login-registration:hover {
+    color: var(--basic-red);   
+  }
+
+  .login-link:active,
+  .login-registration:active {
+    color: #C5C5C5;   
+  }
+      
   
   /* Навигация сайта */
 
@@ -96,14 +134,27 @@ body {
   }
 
 
-  .order a:hover,
-  .order a:focus {
+  .order a:hover {
     background-color: var(--basic-extra-black);
   }
 
-  .site-navigation a:hover,
+  .order a:focus {
+    background-color: var(--basic-extra-black);  
+  }
+
+  .order-button a:focus {
+      background-color: #5FBB2D;
+
+  }
+
   .site-navigation a:hover {
     background-color: var(--basic-extra-dark);
+  }
+
+  .site-navigation a:active {
+    color: #FFFFFF;
+    opacity: 0.5;
+    background-color: #1D2739;
   }
 
   /* Контейнер категорий */
@@ -117,7 +168,7 @@ body {
     background-color: var(--basic-white);
   }
 
-  .catalog-item {
+  .catalog-item--material {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
@@ -125,7 +176,7 @@ body {
     background-color: var(--special-ylellow);
   }
 
-  .catalog-item-2 {
+  .catalog-item--tool {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
@@ -133,7 +184,7 @@ body {
     background-color: var(--special-blue);
   }
 
-  .catalog-item-3 {
+  .catalog-item--technology {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
@@ -141,7 +192,7 @@ body {
     background-color: var(--special-pink);
   }
 
-  .catalog-item-4 {
+  .catalog-item--discount {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
@@ -149,7 +200,7 @@ body {
     background-color: var(--spcial-lite-green);  
   }
 
-  .catalog-item-5 {
+  .catalog-item--delivery {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
@@ -157,11 +208,59 @@ body {
     background-color: var(--special-ylellow);
   }
 
+  .catalog-item--perforator {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    color: var(--basic-extra-black);   
+  }
+
+  .description {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-extra-black);
+  }
+
+  .button-move {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    border: none;
+    background-color: rgb (255,255,255,1);  
+  }
+
+  .button-move:hover {
+    background-color: rgb (255, 255, 255, 0.3); 
+  }
+
+  .button-move:active {
+    background-color: #A9A9A9; 
+    opacity: 0.3;
+  }
+    
+  .button-move--red {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-white);
+    background-color: var(--basic-red);  
+    text-transform: uppercase; 
+  }
+
+  .button-move--red:hover {
+    background-color: #CA2C37;
+  }
+  
+  .button-move--red:active {
+    background-color: #BA2732;
+  }
+
   .catalogue-list {
     list-style: none;
   }
-
- 
 
   /* Популярные товары. Популярные производители */
 
@@ -241,6 +340,17 @@ body {
     color: var(--basic-white);
     background-color: var(--basic-dark); 
   }
+
+  .filter-menu-delivery:hover,
+  .filter-menu-guarantee:hover,
+  .filter-menu-credit:hover {
+    background-color: var(--basic-extra-dark);
+  }
+
+  .filter-menu-delivery:active,
+  .filter-menu-guarantee:active,
+  .filter-menu-credit:active {
+    background-color: var(--basic-white);
 
   /* компании */
 
