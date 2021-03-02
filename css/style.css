@@ -39,8 +39,8 @@ body {
     height: auto;
   }
 
-  .logo {
-    background-color: var(--basic-extra-dark);   
+  .header {
+    background-color: var(--basic-extra-dark);  
   }
 
   .order {
@@ -114,6 +114,7 @@ body {
     font-weight: 400;
     color: var(--basic-white);
     background-color: var(--basic-dark);
+    box-shadow: inset 0px -5px 0px #293449;
   }
 
   .site-navigation,
@@ -229,16 +230,15 @@ body {
     color: var(--basic-white);
     text-transform: uppercase;
     border: none;
-    background-color: rgb (255,255,255,1);  
+    background-color: rgb(255,255,255,0.3);  
   }
 
   .button-move:hover {
-    background-color: rgb (255, 255, 255, 0.3); 
+    background-color: rgb(197,197,197,0.3); 
   }
 
   .button-move:active {
-    background-color: #A9A9A9; 
-    opacity: 0.3;
+    background-color: rgb(169,169,169,0.3); 
   }
     
   .button-move--red {
@@ -283,6 +283,17 @@ body {
 
   .container {
     background-color: var(--basic-white);
+  }
+
+  .card:hover {
+    background-color: var(--basic-white);
+    border: 1px solid #EAEAEA;
+    box-shadow: 0 0 7px rgba(0,0,0,0.2);
+  }
+
+  .card {
+    background-color: var(--basic-white);
+    border: 1px solid #EAEAEA;
   }
 
   .title-card {
@@ -341,18 +352,34 @@ body {
     background-color: var(--basic-dark); 
   }
 
-  .filter-menu-delivery:hover,
+  .filter-menu-delivery {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700; 
+    color: var(--basic-dark);
+    background-color: var(--basic-white);
+  }
+
   .filter-menu-guarantee:hover,
   .filter-menu-credit:hover {
     background-color: var(--basic-extra-dark);
   }
 
-  .filter-menu-delivery:active,
   .filter-menu-guarantee:active,
   .filter-menu-credit:active {
     background-color: var(--basic-white);
+  }
+
+  .service {
+    background-image: url(delivery-car.svg);
+  }
+
 
   /* компании */
+
+  .index-columns{
+    background-color: var(--basic-white);
+  }
 
   .company-list {
     font-size: 18px;
@@ -363,6 +390,14 @@ body {
 
   /* футер */
 
+  .main-footer {
+    background-color: var(--basic-dark);
+  }
+
+  .footer-link {
+    background-color: var(--basic-extra-dark);  
+  }
+
   .footer-navigation {
     font-size: 18px;
     line-height: 24px;
@@ -371,26 +406,49 @@ body {
     background-color: var(--basic-dark) 
   }
 
-  .footer-catalog {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    color: var(--special-ylellow); 
-  }
-
   .footer-link {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
     color: var(--basic-white);
+    text-align: right;
   } 
 
+  .button a,
   .footer-catalog a {
     color: var(--special-ylellow);
   }
 
-  .footer-link {
-    background-color: var(--basic-extra-dark);  
+  .footer-social-list ul {
+    list-style: none;
   }
+
+  .footer-social-list {
+    text-align: center;
+  }
+
+  .footer-company {
+    text-align: left;
+  }
+
+  
+  .social-button:hover,
+  .social-button:active {
+    background-color: var(--basic-red);
+  }
+
+  .button a:active {
+    color: var(--basic-red)
+  }
+
+  .footer-navigation a:hover,
+  .button :hover{
+    text-decoration-line: underline;
+  }
+
+  .footer-navigation a:active {
+    color: rgb(241,245,247,0.5);
+  }
+  
 
   
