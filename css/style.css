@@ -482,7 +482,8 @@ body {
     text-decoration-line: underline;
   }
 
-  .button-more a:active {
+  .button-more a:active,
+  .button a:active {
     text-decoration-line: none; 
     color: var(--basic-red);
   }
