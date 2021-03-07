@@ -53,6 +53,12 @@ body {
     background: #293449;
   }
 
+  .page-header-top-logo {
+    background-color: var(--basic-red); 
+    box-shadow: inset 0px -5px 0px #9C2D36;
+  }
+  
+
   .input:active {
     color: rgb(255,255,255,0.5);
     background-color: var(--basic-white);
@@ -83,6 +89,11 @@ body {
   .order-button a:hover,
   .order-button a:focus {
     background-color: var(--basic-extra-black);
+  }
+
+  .order-button:active {
+    color: rgb(255, 255, 255, 0.5);
+    background-color: var(--special-green); 
   }
 
   /* Вверхние контакты */
@@ -318,6 +329,11 @@ body {
   .container {
     background-color: var(--basic-white);
   }
+ 
+  .card{
+    background-color: var(--basic-white);
+    border: 1px solid #EAEAEA;
+  }
 
   .card:hover, 
   .card:focus {
@@ -404,6 +420,7 @@ body {
 
   .filter-menu-guarantee:active,
   .filter-menu-credit:active {
+    color: var(--basic-dark);
     background-color: var(--basic-white);
   }
 
