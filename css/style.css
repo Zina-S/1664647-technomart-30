@@ -57,20 +57,25 @@ body {
     background-color: var(--basic-red); 
     box-shadow: inset 0px -5px 0px #9C2D36;
   }
-  
 
+  .page-header-top-logo:active {
+    background-color: #BA2732; 
+    
+  }
+  
   .input:active {
     color: rgb(255,255,255,0.5);
     background-color: var(--basic-white);
   }
 
-  .order-navigation{
+  .order-navigation {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
     color: var(--basic-white);
     background-color: var(--basic-extra-dark);
   }
+
   .order-navigation,
   .order-button,
   .footer-link,
@@ -78,7 +83,7 @@ body {
     list-style: none;
   }
 
-  .order-button{
+  .order-button {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -208,53 +213,34 @@ body {
   }
 
   .catalogue-item {
-    background-color: var(--basic-white);
-  }
-
-  .catalog-item-material {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     color: var(--basic-white);
+    list-style: none;
+  }
+
+  .catalog-item-material {
     background-color: var(--special-ylellow);
   }
 
   .catalog-item-tool {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
-    color: var(--basic-white);
     background-color: var(--special-blue);
   }
 
   .catalog-item-technology {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
-    color: var(--basic-white);
     background-color: var(--special-pink);
   }
 
   .catalog-item-discount {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
-    color: var(--basic-white);
     background-color: var(--spcial-lite-green);  
   }
 
   .catalog-item-delivery {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
-    color: var(--basic-white);
     background-color: var(--special-ylellow);
   }
 
   .catalog-item-perforator {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 700;
     color: var(--basic-extra-black);   
   }
 
@@ -293,10 +279,6 @@ body {
     background-color: #BA2732;
   }
 
-  .catalogue-item {
-    list-style: none;
-  }
-
   /* Популярные товары. Популярные производители */
 
   .goods {
@@ -306,6 +288,10 @@ body {
     text-transform: uppercase; 
     color: var(--basic-dark);
     background-color: var(--basic-neutral);
+  }
+
+  .goods .card:active {
+    opacity: 0.5;
   }
 
   .red-button {
@@ -330,7 +316,7 @@ body {
     background-color: var(--basic-white);
   }
  
-  .card{
+  .card {
     background-color: var(--basic-white);
     border: 1px solid #EAEAEA;
   }
@@ -340,11 +326,6 @@ body {
     background-color: var(--basic-white);
     border: 1px solid #EAEAEA;
     box-shadow: 0 0 7px rgba(0,0,0,0.2);
-  }
-
-  .card {
-    background-color: var(--basic-white);
-    border: 1px solid #EAEAEA;
   }
 
   .title-card {
@@ -395,7 +376,7 @@ body {
     color: var(--basic-extra-black);
   }
 
-  .filter{
+  .filter {
     font-size: 21px;
     line-height: 30px;
     font-weight: 700; 
@@ -431,7 +412,7 @@ body {
 
   /* компании */
 
-  .index-columns{
+  .index-columns {
     background-color: var(--basic-white);
   }
 
