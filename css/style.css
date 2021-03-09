@@ -287,7 +287,7 @@ body {
     font-weight: 400;
     text-transform: uppercase; 
     color: var(--basic-dark);
-    background-color: var(--basic-neutral);
+    background-color: var(--basic-white);
   }
 
   .goods .card:active {
@@ -490,6 +490,160 @@ body {
     color: rgb(241,245,247,0.5);
     text-decoration-line: none;
   }
+
+
+
+
+
+
+  /* СТРАНИЦА КАТОЛОГА */
+
+  .cart {
+    background-color: var(--basic-red); 
+  }
+
+  .cabinet-list-order,
+  .cabinet-personal {
+    font-size: 16px; 
+    color: var(--basic-dark:);
+  }
+
+  .title-section {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase; 
+    color: var(--basic-dark);
+    background-color: var(--basic-background); 
+  }
+
+  /* Хлебные крошки*/
+
+  .breadcrumbs a {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--basic-dark);
+    text-transform: uppercase;
+  }
+
+  .breadcrumbs {
+    list-style: none;
+  }
+
+  .text {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-dark);
+    background-color: var(--basic-background);
+  }
+
+  /* Фильтр */
+
+  .filters-item {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--basic-dark);
+    list-style: none;
+    text-transform: uppercase; 
+    background-color: #F7F3EC;
+  }
+
+  .filter-item-price,
+  .filter-item-tipe,
+  .filter-item-functionality {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgb(0,0,0,0.3);
+    text-transform: uppercase;
+  }
+
+  .filter-item-price:hover,
+  .filter-item-price:focus,
+  .filter-item-tipe:hover,
+  .filter-item-tipe:focus,
+  .filter-item-functionality:hover,
+  .filter-item-functionality:focus {
+    color: var(--basic-dark);
+  }
+
+  .filter-item-price:active,
+  .filter-item-tipe:active,
+  .filter-item-functionality:active {
+    color: var(--basic-red);
+  }
+
+  /* Боковой фильтр */
+
+  .catalog-filter legend {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+    color: var(--basic-dark);
+  }
+
+  .catalog-filter input {
+    font-size: 15px;
+    line-height: 119px;
+    font-weight: 400;
+    color: var(--basic-dark);
+    text-transform: uppercase; 
+  }
+
+
+  .catalog-filter input:hover,
+  .catalog-filter input:focus {
+    color: var(--basic-dark); 
+  }
+
+  .catalog-filter input:active {
+    color: rgb(0,0,0,0.4); 
+  }
+
+  /* Пагинация */
+  
+  .pagination a {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--basic-dark);
+    text-transform: uppercase;  
+    border: 1px solid #EAEAEA;
+    border-radius: 2px;
+  }
+
+  .pagination-item {
+    list-style: none;
+  }
+
+  .pagination-item a:hover,
+  .pagination-item a:focus {
+    border: 1px solid #C5C5C5;
+    border-radius: 2px;
+  }
+
+  .pagination-item a:active {
+    border: 1px solid #EE3643;
+    border-radius: 2px;
+  }
+
+  .pagination-item a .pagination-item-active {
+    background-color: var(--basic-red)
+  }
+
+  .inner-page {
+    background-color: var(--basic-white); 
+  }
+
+  .aside {
+    background-color: var(--basic-background);
+  }
+
+
+
 
   
 
