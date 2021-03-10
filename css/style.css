@@ -111,6 +111,13 @@ body {
     color: var(--basic-red);
   }
 
+  .addres {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400; 
+    color: var(--basic-dark);
+  }
+
   .phone {
     font-size: 21px;
     line-height: 30px;
@@ -127,6 +134,26 @@ body {
     font-weight: 400;
     color: var(--basic-extra-black);
     background-color: var(--basic-white);
+  }
+
+  .cabinet-order,
+  .cabinet-personal {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--basic-dark); 
+  }
+
+  .cabinet-order:hover,
+  .cabinet-order:focus,
+  .cabinet-personal:hover,
+  .cabinet-personal:focus {
+    color: var(--basic-red); 
+  }
+
+  .cabinet-order:active,
+  .cabinet-personal:active {
+    color: #C5C5C5; 
   }
 
   .login-link:hover,
@@ -505,7 +532,7 @@ body {
   .cabinet-list-order,
   .cabinet-personal {
     font-size: 16px; 
-    color: var(--basic-dark:);
+    color: var(--basic-dark);
   }
 
   .title-section {
@@ -541,7 +568,7 @@ body {
 
   /* Фильтр */
 
-  .filters-item {
+  .sorting-list {
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -551,30 +578,24 @@ body {
     background-color: #F7F3EC;
   }
 
-  .filter-item-price,
-  .filter-item-tipe,
-  .filter-item-functionality {
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 400;
+  .sorting-item {
     color: rgb(0,0,0,0.3);
-    text-transform: uppercase;
+    cursor: pointer;
   }
 
-  .filter-item-price:hover,
-  .filter-item-price:focus,
-  .filter-item-tipe:hover,
-  .filter-item-tipe:focus,
-  .filter-item-functionality:hover,
-  .filter-item-functionality:focus {
+  .sorting-item:not(.sorting-item-active):hover,
+  .sorting-item:focus {
     color: var(--basic-dark);
   }
 
-  .filter-item-price:active,
-  .filter-item-tipe:active,
-  .filter-item-functionality:active {
+  .sorting-item:not(.sorting-item-active):active {
     color: var(--basic-red);
   }
+
+  .sorting-item-active {
+    color: var(--basic-red);
+  }
+
 
   /* Боковой фильтр */
 
@@ -603,9 +624,29 @@ body {
     color: rgb(0,0,0,0.4); 
   }
 
+  .filter-button {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--basic-dark);
+    text-transform: uppercase;  
+    border: 1px solid #EAEAEA;
+    list-style: none; 
+  }
+
+  .filter-button:hover,
+  .filter-button:focus {
+    border: 1px solid #C5C5C5;
+  }
+
+  .filter-button:active {
+    border: 1px solid #EE3643;
+  }
+  
+
   /* Пагинация */
   
-  .pagination a {
+  .pagination-item {
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -613,24 +654,22 @@ body {
     text-transform: uppercase;  
     border: 1px solid #EAEAEA;
     border-radius: 2px;
-  }
-
-  .pagination-item {
     list-style: none;
   }
 
-  .pagination-item a:hover,
-  .pagination-item a:focus {
+  .pagination-item:hover,
+  .pagination-item:focus {
     border: 1px solid #C5C5C5;
     border-radius: 2px;
   }
 
-  .pagination-item a:active {
+  .pagination-item:active {
     border: 1px solid #EE3643;
     border-radius: 2px;
   }
 
-  .pagination-item a .pagination-item-active {
+  .pagination-item-active {
+    color: var(--basic-white);
     background-color: var(--basic-red)
   }
 
@@ -640,6 +679,10 @@ body {
 
   .aside {
     background-color: var(--basic-background);
+  }
+
+  .main-header {
+    background-color: var(--basic-background); 
   }
 
 
