@@ -525,6 +525,15 @@ body {
 
   /* СТРАНИЦА КАТОЛОГА */
 
+  .inner-page {
+    background-color: var(--basic-white); 
+  }
+
+  .main-header {
+    background-color: var(--basic-background); 
+  }
+
+
   .cart {
     background-color: var(--basic-red); 
   }
@@ -546,16 +555,16 @@ body {
 
   /* Хлебные крошки*/
 
+  .breadcrumbs {
+    list-style: none;
+  }
+
   .breadcrumbs a {
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
     color: var(--basic-dark);
     text-transform: uppercase;
-  }
-
-  .breadcrumbs {
-    list-style: none;
   }
 
   .text {
@@ -672,18 +681,11 @@ body {
     background-color: var(--basic-red)
   }
 
-  .inner-page {
-    background-color: var(--basic-white); 
-  }
-
   .aside {
     background-color: var(--basic-background);
   }
 
-  .main-header {
-    background-color: var(--basic-background); 
-  }
-
+ 
 
 
 
