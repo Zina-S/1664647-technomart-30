@@ -48,10 +48,12 @@ body {
 
   .main-navigation {
     display: grid;
+  
   }
 
   .main-header-bar { 
     background-color: var(--basic-extra-dark);
+    margin-bottom: 42px;
   }
 
   .header {
@@ -322,7 +324,7 @@ body {
       background-color: var(--basic-white);
   }
 
-  .catalogue-item {
+  .catalogue-list {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
