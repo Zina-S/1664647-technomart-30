@@ -30,6 +30,13 @@ body {
     background-repeat: no-repeat;
   }
 
+  .page-body {
+    min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  }
+
   a {
     text-decoration: none;
   }
@@ -39,11 +46,45 @@ body {
     height: auto;
   }
 
-  .header {
-    background-color: var(--basic-extra-dark);  
+  .main-navigation {
+    display: grid;
   }
 
+  .main-header-bar { 
+    background-color: var(--basic-extra-dark);
+  }
+
+  .header {
+    background-color: var(--basic-extra-dark);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    width: 940px;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+  }
+
+  /* Grid */
+
+  .page {
+    height: 100%;
+  }
+
+  /* main-heder */
+
+  .main-header {
+    margin-bottom: 60px;
+    /* outline: 5px solid rgba(0, 255, 0, 0.3); */
+    /* outline-offset: -5px; */
+  }
+  
+
   /* Вверхняя главная навигация */
+
+  .header {
+    /* outline: 5px solid rgba(226, 47, 145, 0.7); */
+    /* outline-offset: -5px; */
+  }
 
   input {
     font-size: 18px;
@@ -56,11 +97,14 @@ body {
   .page-header-top-logo {
     background-color: var(--basic-red); 
     box-shadow: inset 0px -5px 0px #9C2D36;
+    padding: 12px 56px 17px 56px;
+
   }
 
+ 
+
   .page-header-top-logo:active {
-    background-color: #BA2732; 
-    
+    background-color: #BA2732;  
   }
   
   .input:active {
@@ -89,6 +133,7 @@ body {
     font-weight: 400;
     color: var(--basic-white);
     background-color: var(--special-green);
+    padding: 9px 16px;
   }
 
   .order-button a:hover,
@@ -102,6 +147,17 @@ body {
   }
 
   /* Вверхние контакты */
+
+  .info {
+    /* outline: 5px solid rgba(226, 47, 47, 0.7); */
+    /* outline-offset: -5px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    width: 940px;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+  }
 
   .info-app {
     font-size: 16px;
@@ -124,7 +180,11 @@ body {
     font-weight: 400;
     color: var(--basic-red);
     background-color: transparent;
+    width: 151px;
+    height: 30px;
+    padding: 7px 45px;
     border: 3px solid var(--basic-white)   
+    
   }
 
   .login-link,
@@ -134,6 +194,11 @@ body {
     font-weight: 400;
     color: var(--basic-extra-black);
     background-color: var(--basic-white);
+    width: 102px;
+    height: 21px;
+    padding: 12px 24px;
+    margin: 46px 10px;
+    justify-self: center;
   }
 
   .cabinet-order,
@@ -171,6 +236,8 @@ body {
   
   /* Навигация сайта */
 
+  
+
   .site-navigation {
     font-size: 18px;
     line-height: 24px;
@@ -178,6 +245,13 @@ body {
     color: var(--basic-white);
     background-color: var(--basic-dark);
     box-shadow: inset 0px -5px 0px #293449;
+    /* outline: 5px solid rgba(47, 226, 172, 0.7); */
+    /* outline-offset: -5px; */
+    display: grid;
+    width: 940px;
+    margin: 0;
+    padding: 0px;
+    justify-self: center;
   }
 
   .site-navigation,
@@ -232,6 +306,17 @@ body {
     background-color: #1D2739;
   }
 
+  /* Content */
+
+  .container {
+    background-color: var(--basic-white);
+    width: 940px;
+    padding: 0px 10px;
+    margin: 0 auto;
+  }
+  
+  
+
   /* Контейнер категорий */
 
   .columns {
@@ -245,6 +330,10 @@ body {
     font-weight: 700;
     color: var(--basic-white);
     list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
   }
 
   .catalog-item-material {
@@ -260,7 +349,9 @@ body {
   }
 
   .catalog-item-discount {
-    background-color: var(--spcial-lite-green);  
+    background-color: var(--spcial-lite-green);
+    display: grid;
+      
   }
 
   .catalog-item-delivery {
@@ -327,7 +418,10 @@ body {
     font-weight: 400;
     text-transform: uppercase; 
     color: var(--basic-white);
-    background-color: var(--basic-red);  
+    background-color: var(--basic-red);
+    width: 144px;
+    height: 18px; 
+    padding: 10px 24px; 
   }
 
   .red-button:hover,
@@ -341,6 +435,10 @@ body {
 
   .container {
     background-color: var(--basic-white);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
   }
  
   .card {
@@ -441,6 +539,8 @@ body {
 
   .index-columns {
     background-color: var(--basic-white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .company-list {
@@ -454,6 +554,10 @@ body {
 
   .main-footer {
     background-color: var(--basic-dark);
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
+    display: grid;
+    width: 940;
   }
 
   .footer-link {
