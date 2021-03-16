@@ -62,7 +62,7 @@
 
     <main class="main-container">
 
-      <div class="columns">
+      <div class="container">
       <h1>Техномарт</h1>
       <section class="catalogue">
         <h2>Категории</h2>
@@ -123,7 +123,7 @@
         <h2>Популярные товары:</h2>
         <a class="red-button" href="blank.html">все популярные товары</a>
 
-         <div class="container">
+          <div class="container-list">
            <div class="card">
             <img src="img/image/Object-1.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
             <p class="title-card">Перфоратор BOSCH BFG 9000</p>
@@ -151,16 +151,15 @@
            <p class="price">22500 Р.</p>
            <p class="discount-price">12500 Р.</p>
            </div>
+          </div>
 
-         </div>
-
-       </section>
+      </section>
 
        <section class="goods">
         <h2>Популярные производители:</h2>
         <a class="red-button" href="blank.html">все производители</a>
 
-        <div class="container">
+        <div class="container-list">
 
           <div class="card">
             <a href="blank.html"><img src="img/image/producers/boscho.png" width="227" height="37" alt="bosch"></a>
@@ -198,22 +197,25 @@
        </section>
 
        <section class="service">
-        <h2 class="title">Сервисы</h2>
-        <p class="text-info">Хороший интернет-магазин отличается от плохого не только ценами!
-          <br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <div class="section-banner">
-            <div class="filter">
-              <a class="filter-menu-delivery">Доставка</a>
-              <a class="filter-menu-guarantee">Гарантия</a>
-              <a class="filter-menu-credit">Кредит</a>
+        <div class="service-info">
+          <h2 class="title">Сервисы</h2>
+          <p class="text-info">Хороший интернет-магазин отличается от плохого не только ценами!
+            <br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+            <div class="section-banner">
+              <div class="filter">
+                <a class="filter-menu-delivery">Доставка</a>
+                <a class="filter-menu-guarantee">Гарантия</a>
+                <a class="filter-menu-credit">Кредит</a>
+              </div>
+              <div><h3 class="title">Доставка</h3>
+              <p class="text-info">Мы с удовольствием доставим ваш товар прямо 
+                к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, 
+                поднимая его на ваш этаж!
+              </p>
+              </div>
             </div>
-            <h3 class="title">Доставка</h3>
-            <p class="text-info">Мы с удовольствием доставим ваш товар прямо 
-              к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем, 
-              поднимая его на ваш этаж!
-            </p>
-          </div>
+        </div>
        </section>
 
        <div class="index-columns">
@@ -225,9 +227,9 @@
             Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="company-list">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li> 
-          <li>ЖелДорЭкспедиция</li> 
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li> 
+            <li>ЖелДорЭкспедиция</li> 
           </ul>
           <a class="red-button" href="blank.html">Подробнее о компании</a>
         </section>
@@ -243,74 +245,81 @@
     </main>
 
     <footer class="main-footer">
+      
+      <div class="main-footer-bar">
+        <section class="footer-navigation">
+          <h2>Информация</h2>
+          <div><img src="img/image/logo/logoheader.svg" alt=""></div>
 
-      <section class="footer-navigation">
-        <h2>Информация</h2>
-        <div><img src="img/image/logo/logotechno" alt=""></div>
-        <ul class="footer-navigation">   
-          <li>
-            <a href="blank.html">Компания</a>
-          </li>
-          <li>
-            <a href="blank.html">Новости</a>
-          </li>
-          <li>
-            <a href="catalog.html">Каталог</a>
-          </li>
-          <li>
-            <a href="blank.html">Доставка</a>
-          </li>
-          <li>
-            <a href="blank.html">Контакты</a>
-          </li>
-        </ul>
-        
-        <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a href="tel:+7812555055">+7 (812) 555-05-55</a></p>
-
-        <ul class="footer-catalog">
-          <li>
-            <a class="button" href="blank.html">Материалы</a>
-          </li>
-          <li>
-            <a class="button" href="blank.html">Техника</a>
-          </li>
-          <li>
-            <a class="button" href="blank.html">Инструмент</a>
-          </li>
-          <li>
-            <a class="button" href="blank.html">Спецпредложения</a>
-          </li>
-        </ul>
-      </section>
-
-      <div class="footer-link"> 
-        <div class="footer-company">
-          <p>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
-        </div>
-        
-        <div class="footer-social-list">
-          <ul>
+          
+          <ul class="footer-navigation">   
             <li>
-              <a class="social-button" href="#"><img src="img/image/social.media/icon-vk.svg"  width="26" height="15" alt="logo vk"/></a>
+              <a href="blank.html">Компания</a>
             </li>
             <li>
-              <a class="social-button" href="#"><img src="img/image/social.media/icon-fb.svg"  width="12" height="22" alt="logo fb"/></a>
+              <a href="blank.html">Новости</a>
             </li>
             <li>
-              <a class="social-button" href="#"><img src="img/image/social.media/icon-insta.svg"  width="21" height="21" alt="logo insta"/></a>
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li>
+              <a href="blank.html">Доставка</a>
+            </li>
+            <li>
+              <a href="blank.html">Контакты</a>
             </li>
           </ul>
-        </div> 
-        
-        <div class="footer-link-contact">
-          <p class="button">
-            Обратная связь:<a class="button-more" href="#">mail@htmlacademy.ru</a>
-          </p>
-          <p class="button">
-            Разработано — <a class="button-more" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-          </p>
+          
+          <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a href="tel:+7812555055">+7 (812) 555-05-55</a></p>
+
+          
+          <ul class="footer-catalog">
+            <li>
+              <a class="button" href="blank.html">Материалы</a>
+            </li>
+            <li>
+              <a class="button" href="blank.html">Техника</a>
+            </li>
+            <li>
+              <a class="button" href="blank.html">Инструмент</a>
+            </li>
+            <li>
+              <a class="button" href="blank.html">Спецпредложения</a>
+            </li>
+          </ul>
+          
+        </section>
+
+        <div class="footer-link"> 
+          <div class="footer-company">
+            <p>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
+          </div>
+          
+          <div class="footer-social-list">
+            <ul>
+              <li>
+                <a class="social-button" href="#"><img src="img/image/social.media/icon-vk.svg"  width="26" height="15" alt="logo vk"/></a>
+              </li>
+              <li>
+                <a class="social-button" href="#"><img src="img/image/social.media/icon-fb.svg"  width="12" height="22" alt="logo fb"/></a>
+              </li>
+              <li>
+                <a class="social-button" href="#"><img src="img/image/social.media/icon-insta.svg"  width="21" height="21" alt="logo insta"/></a>
+              </li>
+            </ul>
+          </div> 
+          
+          <div class="footer-link-contact">
+            <p class="button">
+              Обратная связь:<a class="button-more" href="#">mail@htmlacademy.ru</a>
+            </p>
+            <p class="button">
+              Разработано — <a class="button-more" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </p>
+          </div>
         </div>
-      </div>
+
+      </div>  
       
     </footer>
    
