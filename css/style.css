@@ -64,7 +64,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 940px;
-    height: 49px;
     padding: 0;
     margin: 0;
   }
@@ -76,12 +75,13 @@ body {
     height: 100%;
   }
 
-  /* .logo {
+  .logo {
     display: grid;
+    width: 220px;
     padding: 0;
     border: 0;
     margin-right: 20px;
-  } */
+  }
 
   /* Вверхняя главная навигация */
 
@@ -94,13 +94,10 @@ body {
     background: #293449;
   }
 
-  
-
   .page-header-top-logo {
     background-color: var(--basic-red); 
     box-shadow: inset 0px -5px 0px #9C2D36;
     padding: 12px 56px 17px 56px;
-    margin-right: 20px;
   }
 
   .page-header-top-logo:active {
@@ -410,18 +407,9 @@ body {
   }
 
   .titile-block {
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: 400;
-    text-transform: uppercase; 
-    color: var(--basic-dark);
     background-color: var(--basic-neutral);
-    width: 940px;
-    display: grid;
-    grid-template-columns: 1fr ;
     padding: 29px 14px 30px 30px;
   }
-  
   
 
   .container-list {
@@ -624,19 +612,14 @@ body {
     font-weight: 400;
     color: var(--basic-white);
     text-align: right;
-  } 
-  .footer-link {
     background-color: var(--basic-extra-dark);
-    width: 940px;
-  }
-  .footer-link {
-    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
     margin-top: 54px;
     padding: 36px 0; 
     margin: 0 auto;
-  }
+  } 
+ 
 
   .button a,
   .footer-catalog a {
