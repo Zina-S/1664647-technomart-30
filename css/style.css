@@ -57,12 +57,13 @@ body {
 
   .header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     width: 940px;
+    height: 49px;
     margin: 0;
     padding: 0;
-    justify-self: center;
   }
+
 
   /* Grid */
 
@@ -86,6 +87,8 @@ body {
     color: var(--basic-white);
     background: #293449;
   }
+
+  
 
   .page-header-top-logo {
     background-color: var(--basic-red); 
@@ -290,7 +293,7 @@ body {
     background-color: #1D2739;
   }
 
-  /* Content */
+  /* MAIN */
 
   .container {
     width: 940px;
@@ -299,7 +302,6 @@ body {
   }
  
   /* Контейнер категорий */
-
 
   .catalogue-list {
     font-size: 18px;
@@ -316,6 +318,7 @@ body {
     margin: 0;
     margin-bottom: 100px;
   }
+
 
   .catalog-item-material {
     background-color: var(--special-ylellow);
@@ -390,6 +393,28 @@ body {
     color: var(--basic-dark);
     background-color: var(--basic-white);
   }
+
+  .goods {
+    margin-top: 40px;
+  }
+
+  .main-container {
+    margin-top: 40px;
+  }
+
+  .titile-block {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase; 
+    color: var(--basic-dark);
+    background-color: var(--basic-neutral);
+    width: 940px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    padding: 29px 14px 30px 30px;
+  }
+  
 
   .container-list {
     display: grid;
@@ -471,10 +496,12 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: var(--basic-extra-black);
+  }
+
+  .service {
     background-color: var(--basic-background);
   }
   
-
   .title {
     font-size: 30px;
     line-height: 30px;
@@ -490,12 +517,17 @@ body {
     color: var(--basic-extra-black);
   }
 
+
   .filter {
     font-size: 21px;
     line-height: 30px;
     font-weight: 700; 
     color: var(--basic-white);
     background-color: var(--basic-dark); 
+  }
+
+  .filter {
+    width: 240px;
   }
 
   .filter-menu-delivery {
@@ -519,15 +551,16 @@ body {
     background-color: var(--basic-white);
   }
 
-  .service {
-    background-image: url(delivery-car.svg);
-  }
 
   .section-banner {
     display: grid;
     grid-template-columns: 240px 1fr;
     margin: 0;
     padding: 0;
+  }
+
+  .title-info {
+    padding-left: 40px;
   }
 
 
@@ -555,12 +588,14 @@ body {
 
   /* футер */
 
-  
+  .main-footer {
+    background-color: var(--basic-dark); 
+  }
 
   .main-footer-bar {
-    background-color: var(--basic-dark);
+    width: 940px; 
     padding: 0;
-    margin-top: 65px;
+    margin: 0 auto;
   }
 
   .footer-navigation {
@@ -568,34 +603,31 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: var(--basic-white);
-    width: 940px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
   }
 
-  .footer-catalog {
-    width: 596px;
+  .footer-navigation {
+    display: grid; 
   }
 
+  
   .footer-link {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
     color: var(--basic-white);
     text-align: right;
-    background-color: var(--basic-extra-dark);
   } 
-
   .footer-link {
+    background-color: var(--basic-extra-dark);
     width: 940px;
-    margin-top: 54px;
-    padding: 36px 0;
-    justify-self: center;
   }
-
-  .main-footer .footer-link {
+  .footer-link {
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
+    margin-top: 54px;
+    padding: 36px 0; 
+    margin: 0 auto;
   }
 
   .button a,
