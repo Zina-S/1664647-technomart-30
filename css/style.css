@@ -46,6 +46,11 @@ body {
     height: auto;
   }
 
+  .main-header {
+    margin-bottom: 60px;
+  }
+
+
   .main-navigation {
     display: grid;
   }
@@ -60,8 +65,8 @@ body {
     grid-template-columns: 1fr 1fr;
     width: 940px;
     height: 49px;
-    margin: 0;
     padding: 0;
+    margin: 0;
   }
 
 
@@ -71,11 +76,12 @@ body {
     height: 100%;
   }
 
-  /* main-heder */
-
-  .main-header {
-    margin-bottom: 60px;
-  }
+  /* .logo {
+    display: grid;
+    padding: 0;
+    border: 0;
+    margin-right: 20px;
+  } */
 
   /* Вверхняя главная навигация */
 
@@ -94,6 +100,7 @@ body {
     background-color: var(--basic-red); 
     box-shadow: inset 0px -5px 0px #9C2D36;
     padding: 12px 56px 17px 56px;
+    margin-right: 20px;
   }
 
   .page-header-top-logo:active {
@@ -385,14 +392,14 @@ body {
 
   /* Популярные товары. Популярные производители */
 
-  .goods {
+  /* .goods {
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
     text-transform: uppercase; 
     color: var(--basic-dark);
     background-color: var(--basic-white);
-  }
+  } */
 
   .goods {
     margin-top: 40px;
@@ -414,6 +421,7 @@ body {
     grid-template-columns: 1fr ;
     padding: 29px 14px 30px 30px;
   }
+  
   
 
   .container-list {
