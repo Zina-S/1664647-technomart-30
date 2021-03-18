@@ -80,7 +80,7 @@ body {
     width: 220px;
     padding: 0;
     border: 0;
-    margin-right: 20px;
+    
   }
 
   /* Вверхняя главная навигация */
@@ -397,18 +397,15 @@ body {
     color: var(--basic-dark);
     background-color: var(--basic-white);
   } */
-
   .goods {
-    margin-top: 40px;
+    margin-bottom: 70px;
   }
-
-  .main-container {
-    margin-top: 40px;
-  }
+  
 
   .titile-block {
     background-color: var(--basic-neutral);
     padding: 29px 14px 30px 30px;
+    margin-bottom: 70px;
   }
   
 
@@ -418,7 +415,6 @@ body {
     column-gap: 20px;
     row-gap: 20px;
     padding: 0;
-    margin: 70px 0;
   }
 
   .goods .card:active {
@@ -492,10 +488,9 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: var(--basic-extra-black);
-  }
-
-  .service {
     background-color: var(--basic-background);
+    padding: 60px 0px 60px 0;
+    margin-bottom: 70px;
   }
   
   .title {
@@ -566,7 +561,6 @@ body {
   .index-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 70px;
     margin-bottom: 70px;
   }
 
@@ -588,23 +582,12 @@ body {
     background-color: var(--basic-dark); 
   }
 
-  .main-footer-bar {
-    width: 940px; 
-    padding: 0;
-    margin: 0 auto;
-  }
-
   .footer-navigation {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
     color: var(--basic-white);
   }
-
-  .footer-navigation {
-    display: grid; 
-  }
-
   
   .footer-link {
     font-size: 16px;
@@ -612,13 +595,16 @@ body {
     font-weight: 400;
     color: var(--basic-white);
     text-align: right;
-    background-color: var(--basic-extra-dark);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    background-color: var(--basic-extra-dark); 
     margin-top: 54px;
     padding: 36px 0; 
     margin: 0 auto;
   } 
+
+  .footer-link-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
  
 
   .button a,
